@@ -1,0 +1,5 @@
+alias server="cd ~/projects/MeridianRx && node bootstrap.js"
+alias glp="cd ~/projects/MeridianRx && gulp"
+alias ll="ls -l"
+alias l="ls -l"
+alias ssh-dev="ssh node@mirxngap01-dvl"
