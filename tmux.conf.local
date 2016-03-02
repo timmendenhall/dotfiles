@@ -1,0 +1,6 @@
+# http://unix.stackexchange.com/questions/38402/aliases-and-tmux
+set-option -g default-command $SHELL
+
+unbind C-b
+set -g prefix C-a
+bind C-a send-prefix
