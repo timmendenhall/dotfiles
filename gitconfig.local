@@ -1,0 +1,13 @@
+[alias]
+  l = log --pretty=colored
+[pretty]
+  colored = format:%Cred%h%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset
+[diff]
+  tool = vimdiff
+[merge]
+  tool = vimdiff
+[difftool]
+  prompt = false
+[user]
+  name = Tim Mendenhall
+  email = timmendenhall@gmail.com
