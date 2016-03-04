@@ -7,6 +7,8 @@ https://github.com/thoughtbot/dotfiles
 
 Install
 
+Set ZSH as the standard shell: chsh -s $(which zsh)
+
 1. Clone thoughtbot's dotfiles: 
 git clone https://github.com/thoughtbot/dotfiles.git
 
