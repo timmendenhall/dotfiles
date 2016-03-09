@@ -20,3 +20,9 @@ git clone https://github.com/thoughtbot/dotfiles.git
 4. Install and run RCUP via the instructions at thoughtbot/dotfiles/README.md
 
 5. [OSX] Install and use iTerm2 from www.iterm2.com
+
+6. Download the solarized theme colors: git clone 
+
+7. Download and install the powerline fonts: git clone && ./install.sh
+
+8. Set your iTerm font / theme to powerline font and solarized colors
