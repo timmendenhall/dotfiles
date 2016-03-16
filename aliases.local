@@ -4,6 +4,8 @@ alias tmux="TERM=screen-256color-bce tmux"
 
 # General SSH
 alias ssh-dev="ssh node@mirxngap01-dvl"
+alias ssh-pi="ssh pi@68.62.84.200 -p 2022"
+alias ssh-retropie="ssh pi@68.62.84.200 -p 2025"
 
 # AWS
 alias ssh-tim="ssh -i '/Users/timmendenhall/.ssh/timsaws.pem' ec2-user@ec2-52-72-237-235.compute-1.amazonaws.com"
