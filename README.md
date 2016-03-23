@@ -23,8 +23,10 @@ Set ZSH as the standard shell: chsh -s $(which zsh)
 
 5. [OSX] Install and use iTerm2 from www.iterm2.com
 
-6. Download the solarized theme colors: git clone https://github.com/altercation/solarized.git
+6. Download the base16 iTerm colors: git clone https://github.com/chriskempson/base16-iterm2.git
 
 7. Download and install the powerline fonts: git clone https://github.com/powerline/fonts.git && ./install.sh
 
-8. Set your iTerm font / theme to powerline font and solarized colors
+8. Set your iTerm font / theme to any powerline font of your choice and base16-default-dark colors
+
+9. Optional brew install the_silver_searcher for a better search algorithm and.gitignore support with ctrl P

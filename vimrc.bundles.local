@@ -1,3 +1,15 @@
-Plug 'altercation/vim-colors-solarized'
+" Airline - info bar on bottom and themes for it
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+
+" Syntax Highlighting
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+
+" Editor Themes / Colors
+Plug 'chriskempson/base16-vim'
+"Plug 'altercation/vim-colors-solarized'
+
+" NERDTree
+"Plug 'scrooloose/nerdtree'
+"Plug 'Xuyuanp/nerdtree-git-plugin'
