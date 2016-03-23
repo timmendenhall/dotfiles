@@ -30,3 +30,5 @@ Set ZSH as the standard shell: chsh -s $(which zsh)
 8. Set your iTerm font / theme to any powerline font of your choice and base16-default-dark colors
 
 9. Optional brew install the_silver_searcher for a better search algorithm and.gitignore support with ctrl P
+
+10. ESLint support by installing eslint globally: npm install -g eslint
