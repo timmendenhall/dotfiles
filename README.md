@@ -13,11 +13,11 @@ Set ZSH as the standard shell: chsh -s $(which zsh)
 
 1. Clone thoughtbot's dotfiles: git clone https://github.com/thoughtbot/dotfiles.git
 
-2. Clone my dotfiles: git clone https://github.com/ultimatetimmah/dotfiles.git
+2. Clone my dotfiles: git clone https://github.com/timmendenhall/dotfiles.git
 
 3. Config the RCRC file where thoughtbot's dotfiles were cloned to match both repos locations
 
-  i.e. DOTFILES_DIRS="$HOME/ultimatetimmah/dotfiles $HOME/thoughtbot/dotfiles"
+  i.e. DOTFILES_DIRS="$HOME/timmendenhall/dotfiles $HOME/thoughtbot/dotfiles"
 
 4. Install and run RCUP via the instructions at thoughtbot/dotfiles/README.md
 
