@@ -11,7 +11,7 @@ https://github.com/thoughtbot/dotfiles
 
 Set ZSH as the standard shell: chsh -s $(which zsh)
 
-1. Clone thoughtbot's dotfiles: git clone https://github.com/thoughtbot/dotfiles.git
+1. Clone or fork thoughtbot's dotfiles: git clone https://github.com/thoughtbot/dotfiles.git
 
 2. Clone my dotfiles: git clone https://github.com/timmendenhall/dotfiles.git
 
@@ -31,4 +31,4 @@ Set ZSH as the standard shell: chsh -s $(which zsh)
 
 9. Optional brew install the_silver_searcher for a better search algorithm and.gitignore support with ctrl P
 
-10. ESLint support by installing eslint globally: npm install -g eslint
+10. ESLint support by installing eslint and other packages globally: npm i -g eslint babel-eslint estraverse estraverse-fb eslint-plugin-react
