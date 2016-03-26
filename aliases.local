@@ -8,6 +8,5 @@ alias ssh-dev="ssh node@mirxngap01-dvl"
 # AWS
 alias ssh-tim="ssh -i '/Users/timmendenhall/.ssh/timsaws.pem' ec2-user@ec2-52-72-237-235.compute-1.amazonaws.com"
 
-if filereadable(expand("~/.aliases.extra"))
-  source ~/.aliases.extra
-endif
+# Include custom aliases
+[[ -f ~/.aliases.extra ]] && source ~/.aliases.extra
