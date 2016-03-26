@@ -16,5 +16,8 @@ Plug 'vim-scripts/closetag.vim'
 Plug 'edsono/vim-matchit'
 
 " Autocompletion, documentation, etc
-Plug 'ternjs/tern_for_vim'
+Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
 Plug 'Valloric/YouCompleteMe'
+
+" Other file format syntax etc.
+Plug 'elzr/vim-json'
