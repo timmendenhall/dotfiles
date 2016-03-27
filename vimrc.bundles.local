@@ -21,3 +21,4 @@ Plug 'Valloric/YouCompleteMe'
 
 " Other file format syntax etc.
 Plug 'elzr/vim-json'
+Plug 'moll/vim-node'
