@@ -21,4 +21,9 @@ Plug 'Valloric/YouCompleteMe'
 
 " Other file format syntax etc.
 Plug 'elzr/vim-json'
+
+" Ctrl + F on symbol to go to file, Ctrl + W + F to open file in new window
 Plug 'moll/vim-node'
+
+" Needs some config but its similar to local history in jetbrains
+Plug 'mbbill/undotree'
