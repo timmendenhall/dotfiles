@@ -8,5 +8,10 @@ alias ssh-dev="ssh node@mirxngap01-dvl"
 # AWS
 alias ssh-tim="ssh -i '/Users/timmendenhall/.ssh/timsaws.pem' ec2-user@ec2-52-72-237-235.compute-1.amazonaws.com"
 
+alias ssh-flash="ssh -i '/Users/timmendenhall/.ssh/LetMeIn.pem' ec2-user@ec2-54-68-128-116.us-west-2.compute.amazonaws.com"
+
+# For fun
+alias wtr="curl http://wttr.in"
+
 # Include custom aliases
 [[ -f ~/.aliases.extra ]] && source ~/.aliases.extra
