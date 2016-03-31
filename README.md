@@ -36,7 +36,7 @@ Install the dotfiles:
 
 [OSX] Install and use [iTerm2 from www.iterm2.com](http://www.iterm2.com)
 
-[OSX] Download the base16 iTerm colors: 
+[OSX] Download the base16 iTerm colors:
 
     git clone https://github.com/chriskempson/base16-iterm2.git
 
@@ -44,7 +44,7 @@ Download and install the powerline fonts:
 
     git clone https://github.com/powerline/fonts.git && ./install.sh
 
-Set your iTerm font / theme to any powerline font of your choice and base16-default-dark colors
+Set your iTerm font / theme to any powerline font of your choice and base16-default-dark colors.  I used Meslo LG 14 pt with base16-default.dark.itermcolors for colors.
 
 Install the silver searcher:
 
@@ -54,10 +54,22 @@ ESLint support by installing eslint and other packages globally:
 
     npm i -g eslint babel-eslint estraverse estraverse-fb eslint-plugin-react
 
+Install updated VIM:
+
+    brew install vim
+
+Install tmux:
+
+    brew install tmux
+
+Install CMake:
+
+    brew install cmake
+
 Install YouCompleteMe:
 
     cd ~/.vim/bundle/YouCompleteMe && ./install.py --tern-completer
 
-Install tern node dependencies:
+Finally, incase node didn't npm install itself you'll have to install tern's npm dependencies:
 
     cd ~/.vim/bundle/tern_for_vim && npm install
