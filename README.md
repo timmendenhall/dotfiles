@@ -56,7 +56,7 @@ ESLint support by installing eslint and other packages globally:
 
 Install updated VIM:
 
-    brew install vim
+    brew install vim --override-system-vi
 
 Install tmux:
 
