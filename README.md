@@ -52,7 +52,7 @@ Install the silver searcher:
 
 ESLint support by installing eslint and other packages globally:
 
-    npm i -g eslint babel-eslint estraverse estraverse-fb eslint-plugin-react
+    npm i -g eslint babel-eslint estraverse estraverse-fb eslint-plugin-react eslint-plugin-babel
 
 Install updated VIM:
 
