@@ -1,6 +1,10 @@
 " Syntax highlighting
 syntax enable
 
+" Encoding
+set encoding=utf-8
+set fileencoding=utf-8
+
 " Themes / Colors
 set background=dark
 "colorscheme solarized
@@ -33,6 +37,9 @@ highlight link SyntasticErrorSign SignColumn
 highlight link SyntasticWarningSign SignColumn
 highlight link SyntasticStyleErrorSign SignColumn
 highlight link SyntasticStyleWarningSign SignColumn
+
+" Airline
+let g:airline_powerline_fonts=1
 
 " tern
 let g:tern_map_keys = 1
