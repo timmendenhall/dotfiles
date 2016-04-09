@@ -10,9 +10,11 @@ Plug 'mxw/vim-jsx'
 Plug 'chriskempson/base16-vim'
 
 " http://www.terminally-incoherent.com/blog/2014/04/02/3-tiny-vim-plugins-that-will-make-your-life-easier/
-" Auto complete ), }, ], </>
+" Auto complete ), }, ]
 Plug 'Townk/vim-autoclose'
+" Close tags with Ctrl + -
 Plug 'vim-scripts/closetag.vim'
+" % works with HTML tags
 Plug 'edsono/vim-matchit'
 
 " Autocompletion, documentation, etc
