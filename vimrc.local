@@ -40,9 +40,16 @@ highlight link SyntasticStyleWarningSign SignColumn
 
 " Airline
 let g:airline_powerline_fonts=1
+let g:airline_theme='base16'
 
 " tern
 let g:tern_map_keys = 1
 let g:tern_show_argument_hints = 'on_hold'
 
 let g:vim_json_syntax_conceal = 0
+
+" NerdTree
+map <C-n> :NERDTreeToggle<CR>
+
+" Sets register so yank can be pasted back in other apps
+set clipboard=unnamed

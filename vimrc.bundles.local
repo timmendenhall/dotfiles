@@ -2,6 +2,13 @@
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+" Tmux status line theme
+Plug 'edkolev/tmuxline.vim'
+
+" File Management
+Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+
 " Syntax Highlighting
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
