@@ -4,6 +4,7 @@ Plug 'vim-airline/vim-airline-themes'
 
 " Tmux status line theme
 Plug 'edkolev/tmuxline.vim'
+Plug 'dickeyxxx/tmux-spotify-info'
 
 " File Management
 Plug 'scrooloose/nerdtree'
