@@ -1,22 +1,37 @@
 #!/bin/zsh
 
-SESSIONNAME="dotfiles"
-tmux has-session -t $SESSIONNAME &> /dev/null
+SESSION_NAME="dotfiles"
+tmux has-session -t ${SESSION_NAME}
 
-if [ $? != 0 ]
- then
-    tmux new-session -s $SESSIONNAME -n script -d
+if [ $? != 0 ]; then
+    # Create dotfiles session
+    tmux new-session -s ${SESSION_NAME} -n vim -d
 
-    tmux split-window -v
-    tmux select-pane -t 1
-    tmux send-keys "cd ~/timmendenhall/dotfiles && vim" C-m
-    tmux select-pane -t 2
-    tmux split-window -h
-    tmux select-pane -t 2
-    tmux send-keys "cd ~/timmendenhall/dotfiles && git status" C-m
-    tmux select-pane -t 3
-    tmux send-keys "wtr" C-m
+    # Vim (1)
+    tmux send-keys -t ${SESSION_NAME} "cd ~/timmendenhall/dotfiles && vim" C-m
 
+    # Git (2)
+    tmux new-window -n git -c ~/timmendenhall/dotfiles -t ${SESSION_NAME}
+    tmux send-keys -t ${SESSION_NAME}:2 'git status' C-m
+
+
+
+    # tmux split-window -v
+    # tmux select-pane -t 2
+    # tmux send-keys "cd ~/timmendenhall/dotfiles && git status" C-m
+    # tmux split-window -h
+    # tmux select-pane -t 1
+    # tmux resize-pane -D 20
+    # tmux send-keys "cd ~/timmendenhall/dotfiles && vim" C-m
+
+    # tmux new-window -t ${SESSION_NAME}:2 -n 'git' -c '~/timmendenhall/dotfiles' 'git status' -d
+
+    # Set default window
+    tmux select-window -t ${SESSION_NAME}:1
 fi
 
-tmux attach -t $SESSIONNAME
+# tmux attach -t ${SESSION_NAME}
+
+if [ -z "$TMUX" ]; then
+    tmux attach -t ${SESSION_NAME} -d
+fi
