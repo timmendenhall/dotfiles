@@ -1,1 +1,4 @@
 export PATH="$PATH:/usr/local/mysql/bin"
+
+# Load up some basic tmux layouts
+[[ -f ~/.tmux.layouts.local ]] && source ~/.tmux.layouts.local
