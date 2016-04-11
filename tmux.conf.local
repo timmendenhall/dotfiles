@@ -1,10 +1,43 @@
 # http://unix.stackexchange.com/questions/38402/aliases-and-tmux
 set-option -g default-command $SHELL
 
+# Mouse mode so I can click back into whichever pane I want
+set -g mouse on
+
+# Control + a instead of b for prefix
 unbind C-b
 set -g prefix C-a
 bind C-a send-prefix
 
+# Horizontal splitting
+bind-key \ split-window -h
+# Vertical splitting
+bind-key - split-window -v
+
 # force a reload of the config file
 unbind r
 bind r source-file ~/.tmux.conf
+
+# Resizing
+bind-key J resize-pane -D 5
+bind-key K resize-pane -U 5
+bind-key H resize-pane -L 5
+bind-key L resize-pane -R 5
+
+bind-key M-j resize-pane -D
+bind-key M-k resize-pane -U
+bind-key M-h resize-pane -L
+bind-key M-l resize-pane -R
+
+# Use Alt-arrow keys without prefix key to switch panes
+bind -n M-Left select-pane -L
+bind -n M-Right select-pane -R
+bind -n M-Up select-pane -U
+bind -n M-Down select-pane -D
+
+# Shift arrow to switch windows
+bind -n S-Left  previous-window
+bind -n S-Right next-window
+
+# No delay for escape key press
+set -sg escape-time 0
