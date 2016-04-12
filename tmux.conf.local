@@ -43,4 +43,4 @@ bind -n S-Right next-window
 set -sg escape-time 0
 
 # if run as "tmux attach", create a session if one does not already exist
-new-session -n $HOST
+# new-session -n $HOST
