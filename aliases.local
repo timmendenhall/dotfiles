@@ -7,9 +7,8 @@ alias ssh-pi="ssh pi@timmah.noip.me -p 2022"
 
 # AWS
 alias ssh-tim="ssh -i '/Users/timmendenhall/.ssh/timsaws.pem' ec2-user@ec2-52-72-237-235.compute-1.amazonaws.com"
-
 alias ssh-flash="ssh -i '/Users/timmendenhall/.ssh/LetMeIn.pem' ec2-user@ec2-54-68-128-116.us-west-2.compute.amazonaws.com"
-alias ssh-flash2="ssh -i '/Users/timmendenhall/.ssh/LetMeIn.pem' ec2-user@ec2-52-37-2-92.us-west-2.compute.amazonaws.com"
+alias ssh-api="ssh -i '/Users/timmendenhall/.ssh/FlashRecruitAPI.pem' ec2-user@ec2-52-201-108-119.compute-1.amazonaws.com"
 
 # For fun
 alias wtr="curl http://wttr.in"
