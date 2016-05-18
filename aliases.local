@@ -8,6 +8,7 @@ alias flashreact=". ~/.tmux.flashreact.local"
 alias flashold=". ~/.tmux.flashold.local"
 alias api=". ~/.tmux.api.local"
 alias chrome=". ~/.tmux.chrome.local"
+alias belay=". ~/.tmux.belay.local"
 
 # General SSH
 alias ssh-pi="ssh pi@timmah.noip.me -p 2022"

@@ -1,0 +1,21 @@
+#!/bin/zsh
+
+BELAY_SESSION="belay"
+
+# Create session
+tmux new-session -s ${BELAY_SESSION} -n vim -d
+
+# Vim (1)
+tmux split-window -v
+tmux select-pane -t 2
+tmux send-keys "cd ~/flashrecruit/belay && gulp watch" C-m
+tmux select-pane -t 1
+tmux resize-pane -D 40
+tmux send-keys "cd ~/flashrecruit/belay && vim" C-m
+
+# Git (2)
+tmux new-window -n git -c ~/flashrecruit/belay -t ${BELAY_SESSION}
+tmux send-keys -t ${BELAY_SESSION}:2 'git status' C-m
+
+# Set default window
+tmux select-window -t ${BELAY_SESSION}:1
