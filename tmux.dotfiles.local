@@ -1,0 +1,18 @@
+#!/bin/zsh
+
+DOT_FILES_SESSION="dotfiles"
+# Create dotfiles session
+tmux new-session -s ${DOT_FILES_SESSION} -n vim -d
+
+# Vim (1)
+tmux send-keys -t ${DOT_FILES_SESSION} "cd ~/timmendenhall/dotfiles && vim" C-m
+
+# Git (2)
+tmux new-window -n git -c ~/timmendenhall/dotfiles -t ${DOT_FILES_SESSION}
+tmux send-keys -t ${DOT_FILES_SESSION}:2 'git status' C-m
+
+# Shell (3)
+tmux new-window -n cli -t ${DOT_FILES_SESSION}
+
+# Set default window
+tmux select-window -t ${DOT_FILES_SESSION}:3

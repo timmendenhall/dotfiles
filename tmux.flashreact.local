@@ -1,0 +1,24 @@
+#!/bin/zsh
+
+FLASH_REACT_SESSION="flashreact"
+
+# Create session
+tmux new-session -s ${FLASH_REACT_SESSION} -n vim -d
+
+# Vim (1)
+tmux split-window -v
+tmux select-pane -t 2
+tmux send-keys "cd ~/flashrecruit/flashrecruit-react && node bootstrap.js" C-m
+tmux split-window -h
+tmux select-pane -t 3
+tmux send-keys "cd ~/flashrecruit/flashrecruit-react && gulp" C-m
+tmux select-pane -t 1
+tmux resize-pane -D 40
+tmux send-keys "cd ~/flashrecruit/flashrecruit-react && vim" C-m
+
+# Git (2)
+tmux new-window -n git -c ~/flashrecruit/flashrecruit-react -t ${FLASH_REACT_SESSION}
+tmux send-keys -t ${FLASH_REACT_SESSION}:2 'git status' C-m
+
+# Set default window
+tmux select-window -t ${FLASH_REACT_SESSION}:1
