@@ -1,0 +1,29 @@
+#!/bin/zsh
+
+PORTAL_API_SESSION="portalapi"
+
+# Create session
+tmux new-session -s ${PORTAL_API_SESSION} -n vim -d
+
+# Vim (1)
+# tmux send-keys -t ${PORTAL_API_SESSION} "cd ~/flashrecruit/api && vim" C-m
+tmux split-window -v
+tmux select-pane -t 2
+tmux send-keys "cd ~/ultimatetimmah/portal-api && npm start" C-m
+tmux split-window -h
+tmux select-pane -t 3
+# tmux send-keys "cd ~/ultimatetimmah/portal-api && npm run test:watch" C-m
+tmux select-pane -t 1
+tmux resize-pane -D 40
+tmux send-keys "cd ~/ultimatetimmah/portal-api && vim" C-m
+
+# Git (2)
+tmux new-window -n git -c ~/ultimatetimmah/portal-api -t ${PORTAL_API_SESSION}
+tmux send-keys -t ${PORTAL_API_SESSION}:2 'git status' C-m
+
+# Mongod (3)
+tmux new-window -n mongod -c ~/ultimatetimmah/portal-api -t ${PORTAL_API_SESSION}
+tmux send-keys -t ${PORTAL_API_SESSION}:3 'mongod' C-m
+
+# Set default window
+tmux select-window -t ${PORTAL_API_SESSION}:1

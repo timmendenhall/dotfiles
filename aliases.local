@@ -9,6 +9,8 @@ alias flashold=". ~/.tmux.flashold.local"
 alias api=". ~/.tmux.api.local"
 alias chrome=". ~/.tmux.chrome.local"
 alias belay=". ~/.tmux.belay.local"
+alias portalapi=". ~/.tmux.portalapi.local"
+alias portalclient=". ~/.tmux.portalclient.local"
 
 # General SSH
 alias ssh-pi="ssh pi@timmah.noip.me -p 2022"

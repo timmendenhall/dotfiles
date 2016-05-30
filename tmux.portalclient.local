@@ -1,0 +1,24 @@
+#!/bin/zsh
+
+PORTAL_CLIENT_SESSION="portalclient"
+
+# Create session
+tmux new-session -s ${PORTAL_CLIENT_SESSION} -n vim -d
+
+# Vim (1)
+tmux split-window -v
+tmux select-pane -t 2
+tmux send-keys "cd ~/ultimatetimmah/portal-client && node bootstrap.js" C-m
+tmux split-window -h
+tmux select-pane -t 3
+# tmux send-keys "cd ~/ultimatetimmah/portal-client && gulp" C-m
+tmux select-pane -t 1
+tmux resize-pane -D 40
+tmux send-keys "cd ~/ultimatetimmah/portal-client && vim" C-m
+
+# Git (2)
+tmux new-window -n git -c ~/ultimatetimmah/portal-client -t ${PORTAL_CLIENT_SESSION}
+tmux send-keys -t ${PORTAL_CLIENT_SESSION}:2 'git status' C-m
+
+# Set default window
+tmux select-window -t ${PORTAL_CLIENT_SESSION}:1
