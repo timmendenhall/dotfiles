@@ -11,7 +11,7 @@ tmux select-pane -t 2
 tmux send-keys "cd ~/flashrecruit/flashrecruit-react && node bootstrap.js" C-m
 tmux split-window -h
 tmux select-pane -t 3
-tmux send-keys "cd ~/flashrecruit/flashrecruit-react && gulp" C-m
+# tmux send-keys "cd ~/flashrecruit/flashrecruit-react && gulp" C-m
 tmux select-pane -t 1
 tmux resize-pane -D 40
 tmux send-keys "cd ~/flashrecruit/flashrecruit-react && vim" C-m
