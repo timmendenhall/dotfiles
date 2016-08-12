@@ -21,7 +21,7 @@ Plug 'chriskempson/base16-vim'
 " Auto complete ), }, ]
 Plug 'Townk/vim-autoclose'
 " Close tags with Ctrl + -
-Plug 'vim-scripts/closetag.vim'
+" Plug 'vim-scripts/closetag.vim'
 " % works with HTML tags
 Plug 'edsono/vim-matchit'
 
@@ -37,3 +37,6 @@ Plug 'moll/vim-node'
 
 " Needs some config but its similar to local history in jetbrains
 Plug 'mbbill/undotree'
+
+" Editor Config
+Plug 'editorconfig/editorconfig-vim'
