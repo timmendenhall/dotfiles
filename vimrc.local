@@ -1,6 +1,10 @@
 " Syntax highlighting
 syntax enable
 
+" Allowing locally configured .vimrc files per project
+set exrc
+set secure
+
 " Encoding
 set encoding=utf-8
 set fileencoding=utf-8
