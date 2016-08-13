@@ -73,3 +73,12 @@ let g:tmuxline_preset = {
 
 " Editor config
 let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
+
+" C++ Settings
+set makeprg=make\ -C\ ./\ -j9
+
+" F4 to build
+nnoremap <F4> :make!<cr>
+
+" F5 Run
+nnoremap <F5> :!./build/TheNorth<cr>
