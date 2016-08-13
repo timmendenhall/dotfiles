@@ -1,0 +1,15 @@
+#!/bin/zsh
+
+THE_NORTH_SESSION="thenorth"
+# Create dotfiles session
+tmux new-session -s ${THE_NORTH_SESSION} -n vim -d
+
+# Vim (1)
+tmux send-keys -t ${THE_NORTH_SESSION} "cd ~/ultimatetimmah/the-north && vim" C-m
+
+# Git (2)
+tmux new-window -n git -c ~/ultimatetimmah/the-north -t ${THE_NORTH_SESSION}
+tmux send-keys -t ${THE_NORTH_SESSION}:2 'git status' C-m
+
+# Set default window
+tmux select-window -t ${THE_NORTH_SESSION}:1

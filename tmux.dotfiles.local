@@ -12,7 +12,7 @@ tmux new-window -n git -c ~/timmendenhall/dotfiles -t ${DOT_FILES_SESSION}
 tmux send-keys -t ${DOT_FILES_SESSION}:2 'git status' C-m
 
 # Shell (3)
-tmux new-window -n cli -t ${DOT_FILES_SESSION}
+# tmux new-window -n cli -t ${DOT_FILES_SESSION}
 
 # Set default window
-tmux select-window -t ${DOT_FILES_SESSION}:3
+tmux select-window -t ${DOT_FILES_SESSION}:1
