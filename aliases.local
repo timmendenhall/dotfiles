@@ -12,6 +12,7 @@ alias belay=". ~/.tmux.belay.local"
 alias portalapi=". ~/.tmux.portalapi.local"
 alias portalclient=". ~/.tmux.portalclient.local"
 alias thenorth=". ~/.tmux.thenorth.local"
+alias dream=". ~/.tmux.dream.local"
 
 # General SSH
 alias ssh-pi="ssh pi@timmah.noip.me -p 2022"
