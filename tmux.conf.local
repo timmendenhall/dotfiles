@@ -1,5 +1,9 @@
+# https://github.com/tmux/tmux/issues/543
+set -g default-shell $SHELL
+set -g default-command "reattach-to-user-namespace -l ${SHELL}"
+
 # http://unix.stackexchange.com/questions/38402/aliases-and-tmux
-set-option -g default-command $SHELL
+# set-option -g default-command $SHELL
 
 # Mouse mode so I can click back into whichever pane I want
 set -g mouse on

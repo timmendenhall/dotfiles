@@ -1,1 +1,2 @@
-export PATH="$PATH:/usr/local/mysql/bin"
+export ANDROID_SDK_ROOT="/Users/timmendenhall/Library/Android/sdk"
+export PATH="/usr/local/mysql/bin:$PATH:$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/platform-tools"

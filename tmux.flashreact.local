@@ -9,8 +9,8 @@ tmux new-session -s ${FLASH_REACT_SESSION} -n vim -d
 tmux split-window -v
 tmux select-pane -t 2
 tmux send-keys "cd ~/flashrecruit/flashrecruit-react && npm run start" C-m
-tmux split-window -h
-tmux select-pane -t 3
+# tmux split-window -h
+# tmux select-pane -t 3
 # tmux send-keys "cd ~/flashrecruit/flashrecruit-react && gulp" C-m
 tmux select-pane -t 1
 tmux resize-pane -D 40
