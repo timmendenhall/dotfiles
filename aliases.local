@@ -14,10 +14,10 @@ alias portalapi=". ~/.tmux.portalapi.local"
 alias portalclient=". ~/.tmux.portalclient.local"
 alias thenorth=". ~/.tmux.thenorth.local"
 alias dream=". ~/.tmux.dream.local"
+alias dino=". ~/.tmux.dino.local"
 alias potion=". ~/.tmux.potion.local"
-
-# General SSH
-alias ssh-pi="ssh pi@timmah.noip.me -p 2022"
+alias rpgserver=". ~/.tmux.rpgserver.local"
+alias rpgclient=". ~/.tmux.rpgclient.local"
 
 # AWS
 alias ssh-tim="ssh -i '/Users/timmendenhall/.ssh/timsaws.pem' ec2-user@ec2-52-72-237-235.compute-1.amazonaws.com"

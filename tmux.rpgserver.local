@@ -1,0 +1,15 @@
+#!/bin/zsh
+
+SESSION="rpg-server"
+# Create dotfiles session
+tmux new-session -s ${SESSION} -n vim -d
+
+# Vim (1)
+tmux send-keys -t ${SESSION} "cd ~/ultimatetimmah/rpg-server && vim" C-m
+
+# Git (2)
+tmux new-window -n git -c ~/ultimatetimmah/rpg-server -t ${SESSION}
+tmux send-keys -t ${SESSION}:2 'git status' C-m
+
+# Set default window
+tmux select-window -t ${SESSION}:1
