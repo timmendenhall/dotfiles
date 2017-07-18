@@ -18,6 +18,7 @@ alias dino=". ~/.tmux.dino.local"
 alias potion=". ~/.tmux.potion.local"
 alias rpgserver=". ~/.tmux.rpgserver.local"
 alias rpgclient=". ~/.tmux.rpgclient.local"
+alias rpgcommon=". ~/.tmux.rpgcommon.local"
 
 # AWS
 alias ssh-tim="ssh -i '/Users/timmendenhall/.ssh/timsaws.pem' ec2-user@ec2-52-72-237-235.compute-1.amazonaws.com"

@@ -82,3 +82,7 @@ let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
 
 " C++ Settings
 set makeprg=make\ -C\ ./\ -j9
+
+" YouCompleteMe C++ settings
+" let g:ycm_confirm_extra_conf = 0
+let g:ycm_extra_conf_globlist = ['~/ultimatetimmah/*','!~/*']
