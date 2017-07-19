@@ -5,14 +5,14 @@ FLASH_NATIVE_SESSION="flashnative"
 tmux new-session -s ${FLASH_NATIVE_SESSION} -n vim -d
 
 # Vim (1)
-tmux send-keys -t ${FLASH_NATIVE_SESSION} "cd ~/flashrecruit/native && vim" C-m
+tmux send-keys -t ${FLASH_NATIVE_SESSION} "cd ~/flashrecruit/flashrecruitNative && vim" C-m
 
 # Run (2)
-tmux new-window -n cli -c ~/flashrecruit/native -t ${FLASH_NATIVE_SESSION}
-tmux send-keys -t ${FLASH_NATIVE_SESSION}:2 'react-native run-ios' C-m
+tmux new-window -n cli -c ~/flashrecruit/flashrecruitNative -t ${FLASH_NATIVE_SESSION}
+tmux send-keys -t ${FLASH_NATIVE_SESSION}:2 'npm run start' C-m
 
 # Git (3)
-tmux new-window -n git -c ~/flashrecruit/native -t ${FLASH_NATIVE_SESSION}
+tmux new-window -n git -c ~/flashrecruit/flashrecruitNative -t ${FLASH_NATIVE_SESSION}
 tmux send-keys -t ${FLASH_NATIVE_SESSION}:3 'git status' C-m
 
 # Set default window
