@@ -6,19 +6,16 @@ alias tmux="TERM=screen-256color-bce tmux"
 alias dotfiles=". ~/.tmux.dotfiles.local"
 alias flashreact=". ~/.tmux.flashreact.local"
 alias flashnative=". ~/.tmux.flashnative.local"
-alias flashold=". ~/.tmux.flashold.local"
 alias api=". ~/.tmux.api.local"
-alias chrome=". ~/.tmux.chrome.local"
+alias flash="api && flashreact && flashnative && belay";
 alias belay=". ~/.tmux.belay.local"
 alias portalapi=". ~/.tmux.portalapi.local"
 alias portalclient=". ~/.tmux.portalclient.local"
-alias thenorth=". ~/.tmux.thenorth.local"
 alias dream=". ~/.tmux.dream.local"
-alias dino=". ~/.tmux.dino.local"
-alias potion=". ~/.tmux.potion.local"
 alias rpgserver=". ~/.tmux.rpgserver.local"
 alias rpgclient=". ~/.tmux.rpgclient.local"
 alias rpgcommon=". ~/.tmux.rpgcommon.local"
+alias rpg="dream && rpgserver && rpgcommon && rpgclient";
 
 # AWS
 alias ssh-tim="ssh -i '/Users/timmendenhall/.ssh/timsaws.pem' ec2-user@ec2-52-72-237-235.compute-1.amazonaws.com"
