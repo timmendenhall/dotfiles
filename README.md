@@ -32,7 +32,7 @@ Install [rcm](https://github.com/thoughtbot/rcm):
 
 Install the dotfiles:
 
-    env RCRC=$HOME/timmendenhall/dotfiles-base/rcrc rcup
+    env RCRC=$HOME/source/dotfiles-base/rcrc rcup
 
 [OSX] Install and use [iTerm2 from www.iterm2.com](http://www.iterm2.com)
 
